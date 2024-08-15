@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif; 
+}
+.card__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    min-height: 100vh;
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.card__items .card{
+    /* box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    height: 400px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.card__items .card .card__img{
+    background-position: center;
+    background-size: contain;
+    position: relative;
+    height: 40%;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.card__items .card .card__img:hover{
+    transform: scale(1.1);
+}
+
+.top-boxes .card__items .card:nth-child(1) .card__img{
+    background-image: url(./images/microsoft.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.top-boxes .card__items .card:nth-child(2) .card__img{
+    background-image: url(./images/apple.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.top-boxes .card__items .card:nth-child(3) .card__img{
+    background-image: url(./images/nvidia.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bottom-boxes .card__items .card:nth-child(1) .card__img{
+    background-image: url(./images/alphabet.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bottom-boxes .card__items .card:nth-child(2) .card__img{
+    background-image: url(./images/amazon.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bottom-boxes .card__items .card:nth-child(3) .card__img{
+    background-image: url(./images/saudi.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card__items .card .about__card{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 60%;
+    padding: 15px;
+}
+
+.card__items .card .about__card p{
+    font-size: 15px;
+}
+
+.card__items .card .about__card h3,
+.card__items .card .about__card p:nth-child(2){
+    margin: 10px 0;
+}
+
+.bottom-boxes{
+    margin-top: -500px;
+}
